@@ -1,0 +1,63 @@
+:root {
+    --primary: #4f46e5;
+    --danger: #ef4444;
+    --bg: #f8fafc;
+    --text: #1e293b;
+}
+
+.admin-container {
+    background-color: var(--bg);
+    min-height: 100vh;
+    padding: 2rem;
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.admin-header { margin-bottom: 2rem; text-align: center; }
+.admin-header h1 { color: #0f172a; margin: 0; font-size: 2.2rem; }
+.admin-header p { color: #64748b; margin-top: 0.5rem; }
+
+.card, .table-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e2e8f0;
+}
+
+.card-title { margin-top: 0; color: #334155; border-bottom: 2px solid #f1f5f9; padding-bottom: 1rem; }
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.input-box label { display: block; font-size: 0.85rem; font-weight: 600; color: #64748b; margin-bottom: 0.5rem; }
+.input-box input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+.input-box input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1); }
+
+.btn-primary { background: var(--primary); color: white; border: none; padding: 0.8rem 2rem; border-radius: 6px; font-weight: 600; cursor: pointer; }
+.btn-ghost { background: transparent; color: #64748b; border: none; margin-left: 1rem; cursor: pointer; }
+
+.modern-table { width: 100%; border-collapse: collapse; }
+.modern-table th { text-align: left; padding: 1rem; background: #f8fafc; color: #475569; font-size: 0.85rem; text-transform: uppercase; }
+.modern-table td { padding: 1.2rem 1rem; border-top: 1px solid #f1f5f9; }
+
+.user-info { display: flex; flex-direction: column; }
+.username { font-weight: 700; color: var(--primary); }
+.fullname { font-size: 0.9rem; color: #64748b; }
+.badge-active { background: #dcfce7; color: #166534; padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700; }
+
+.actions-cell { display: flex; gap: 0.5rem; }
+.edit-btn { background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; padding: 0.4rem 1rem; border-radius: 6px; cursor: pointer; }
+.delete-btn { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; padding: 0.4rem 1rem; border-radius: 6px; cursor: pointer; }
