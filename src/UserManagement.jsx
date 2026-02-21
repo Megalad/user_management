@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './UserManagement.css';
 
-const API_URL = "http://localhost:3000/api/user"; // Ensure port matches your Next.js server
+const API_URL = "https://my-server-1.eastasia.cloudapp.azure.com/api/user"; // Ensure port matches your Next.js server
 
 export default function UserManagement() {
     const [users, setUsers] = useState([]);
